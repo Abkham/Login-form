@@ -1,0 +1,223 @@
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #090b24,
+        #24104b,
+        #5526a8
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: white;
+}
+
+/* Main container */
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+/* Login card */
+.login-card {
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    padding: 40px 32px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* Logo */
+.logo {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #b58cff, #7148ff);
+    border-radius: 20px;
+    font-size: 35px;
+    color: white;
+    box-shadow: 0 8px 25px rgba(135, 83, 255, 0.4);
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    color: #c6c2dd;
+    font-size: 14px;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+/* Form inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    color: #f0edff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    border-radius: 12px;
+    background: rgba(10, 10, 35, 0.35);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #a9a4c5;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+    border-color: #b58cff;
+    box-shadow: 0 0 0 3px rgba(181, 140, 255, 0.15);
+}
+
+/* Remember me and forgot password */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0 28px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #d5d0eb;
+    cursor: pointer;
+}
+
+.remember input {
+    accent-color: #a77aff;
+    cursor: pointer;
+}
+
+.form-options a,
+.signup a {
+    color: #c4a2ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.form-options a:hover,
+.signup a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Sign in button */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #a879ff, #7148ff);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(113, 72, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+button span {
+    margin-left: 8px;
+    font-size: 19px;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(113, 72, 255, 0.45);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Sign up text */
+.signup {
+    color: #d0cbe4;
+    font-size: 13px;
+    margin-top: 27px;
+    line-height: 1.8;
+}
+
+/* Bottom divider */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 28px;
+    color: #aaa3c9;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+.footer-text {
+    color: #b6afd2;
+    font-size: 11px;
+    margin-top: 24px;
+}
+
+/* Responsive design for phones */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 32px 22px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .form-options {
+        font-size: 11px;
+    }
+}
